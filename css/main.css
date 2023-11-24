@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+@keyframes change-color {
+    0%{
+        background-color: orange;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+body{
+    background-image: url('../image/01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 69%;
+    height: 50px;
+    margin-top: 25px;
+    text-align: center;
+    float: right;
+}
+header>nav{
+    width: 100%;
+    height: inherit;
+}
+header>nav>ul{
+    width: 66%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+header>nav>ul>li{
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    border-left: 2px solid black;
+}
+header>nav>ul>li:nth-of-type(4){
+    border-left: none;
+}
+header>nav>ul>li>a{
+    width: inherit;
+    height: inherit;
+    display: block;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 300ms linear;
+}
+header>nav>ul>li>a:hover{
+    color: yellow;
+
+}
+main{
+    width: 29%;
+    background-color: rgba(0, 0, 0, 0.8);
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+main>section{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+}
+main>section>h1{
+    color: white;
+    font-size: 31px;
+}
+main>section>p{
+    color: rgb(214, 214, 214);
+    margin-top: 35px;
+    font-size: 24px;
+    line-height: 40px;
+}
+main>section>h2{
+    color: white;
+    margin-top: 35px;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+main>section>a:nth-of-type(1){
+    width: 150px;
+    height: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 5px 30px 5px 30px;
+    box-sizing: border-box;
+    animation-name: change-color;
+    animation-duration:150ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+main>section>a:nth-of-type(2){
+    display: block;
+    width: 120px;
+    color: rgb(214, 214, 214);
+    margin:15px auto 0px auto;
+    font-size: 17px;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+main>section>a:hover:nth-of-type(2){
+    border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+
